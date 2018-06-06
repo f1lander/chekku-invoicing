@@ -70,8 +70,11 @@ input:focus {
 .infos .right input {
   text-align:right;
 }
-.infos .input-container {
+.infos .input-container input {
   padding:3px 0;
+
+   width: 300px !important;
+
 }
 
 .header.row {
