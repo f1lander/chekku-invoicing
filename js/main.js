@@ -18,11 +18,11 @@ angular.module('invoicing', [])
         address1: '31 calle, 14 - 15 avenida',
         address2: 'San Pedro Sula, Cortés, Honduras',
         phone: '+504 33986456',
-        cai: 'CE8251-F1F444-C942B3-E68B4B-07EFBB-06',
-        limitDate: '13/06/2018',
+        cai: 'EF82B6-37E5C4-EA499A-AC6AEA-A3625D-CF',
+        limitDate: '24/05/2019',
         rangeTitle: 'Rango de Facturación:',
-        rangeInvoice1: '000-001-01-00000011',
-        rangeInvoice2: '000-001-01-00000030'
+        rangeInvoice1: '000-001-01-00000031',
+        rangeInvoice2: '000-001-01-00000060'
     },
     // items: [
     //     { qty: 1, description: 'Licencia Inicial de Software', cost: 990 },
@@ -168,9 +168,10 @@ angular.module('invoicing', [])
 
             $scope.products  = [
                 { qty: 1, description: 'Licencia Inicial de Software', cost: 990 },
+                { qty: 1, description: 'Licencia de Software por suscripcion', cost: 990 },
                 { qty: 1, description: 'Licencia de Software (Reportes) 50%', cost: 990 },
                 { qty: 1, description: 'Aplicación para dispositivos android (apk)', cost: 15 },
-                { qty: 1, description: 'Pago Mensual de Servicio Chekku - 10 USD', cost: 10 },
+                { qty: 1, description: 'Licencia de Software Suscripcion Mensua', cost: 10 },
                 { qty: 1, description: 'Pago Mensual de Servicio Chekku', cost: 10 },
                 { qty: 1, description: 'Desarrollo personalizado 50%', cost: 10 },
                 { qty: 1, description: 'Celular Motorola 32gb mem. 2gb ram, Quad Core, 3000+ mAh', cost: 10 },
@@ -184,7 +185,8 @@ angular.module('invoicing', [])
                 { name: "Sogesa", rtn:"08019002276608"},
                 { name: "Procasa", rtn:"05019007066556"},
                 { name: "Cementos del Norte S.A", rtn:"05029002059059"},
-                { name: "Grupo Diserb", rtn: "05019011359451"}
+                { name: "Grupo Diserb", rtn: "05019011359451"},
+                { name: "Drogueria Le Clinique S de RL de CV", rtn: "05019011376060"}
             ];
 
         })()

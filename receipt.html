@@ -20,12 +20,27 @@
         </div>
         <div class="row branding">
             <div class="col-xs-6">
-                <div class="input-container"><label for="invoice-number">Chekku S.A</label></div>
-                <div class="input-container"><label for="invoice-rtn">RTN:</label><input type="text" id="invoice-company-rtn" ng-model="invoice.company_info.rtn" /></div>
-                <div class="input-container"><input type="text" ng-model="invoice.company_info.address0" /></div>
-                <div class="input-container"><input type="text" style="width: 300px !important;" ng-model="invoice.company_info.address1" /></div>
-                <div class="input-container"><input type="text" style="width: 300px !important;" ng-model="invoice.company_info.address2" /></div>
-                <div class="input-container"><input type="text" ng-model="invoice.company_info.phone" /></div>
+                <div class="input-container">
+                    <label for="invoice-number">{{ invoice.company_info.name }}</label>
+                </div>
+                <div class="input-container">
+                    <label for="invoice-rtn">RTN:</label>
+                    <input type="text" style="width: 300px !important;" id="invoice-company-rtn" ng-model="invoice.company_info.rtn"
+                    />
+                </div>
+                <div class="input-container">
+                    <input type="text" style="width: 300px !important;" ng-model="invoice.company_info.address0" />
+                </div>
+                <div class="input-container">
+                    <input type="text" style="width: 300px !important;" ng-model="invoice.company_info.address1" />
+                </div>
+                <div class="input-container">
+                    <input type="text" style="width: 300px !important;" ng-model="invoice.company_info.address2" />
+                </div>
+                <div class="input-container">
+                    <input type="text" ng-model="invoice.company_info.phone" />
+                </div>
+               
 
             </div>
             <div class="col-xs-6 logo-container">
